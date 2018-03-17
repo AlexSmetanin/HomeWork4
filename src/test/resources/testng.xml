@@ -1,28 +1,31 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
 <suite name="Products Management" verbose="1" >
+
+    <!--configure test to execute testing script using Chrome browser-->
     <test name="Create New Product [Chrome]" >
-        <!--configure test to execute testing script using Chrome browser-->
         <parameter name="browser" value="chrome"/>
         <classes>
             <class name="lecture4.tests.CreateProductTest" > </class>
         </classes>
     </test>
 
-    <!--Prepare test for firefox browser
+    <!--Prepare test for Firefox browser-->
     <test name="Create New Product [Firefox]" >
         <parameter name="browser" value="firefox"/>
         <classes>
             <class name="lecture4.tests.CreateProductTest" > </class>
         </classes>
-    </test>-->
+    </test>
 
     <!--Prepare test for IE browser
+    //(but I'm not sure that it will works well because it needs to chang some system settings)
     <test name="Create New Product [Internet Explorer]" >
-        <parameter name="browser" value="ie"/>
+        <parameter name="browser" value="internet explorer"/>
         <classes>
             <class name="lecture4.tests.CreateProductTest" > </class>
         </classes>
-    </test>-->
+    </test>
+    -->
 
 </suite>
